@@ -13,12 +13,14 @@ import tempfile
 import logging
 import time
 
+#Create information for logs
 log_path = "logs/amplitude_export.log"
 run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 # Define log format with run ID
 log_format = f"%(asctime)s | RUN {run_id} | %(levelname)s | %(message)s"
 
+#Configure logging.info()
 logging.basicConfig(
     level=logging.INFO,
     format=log_format,
