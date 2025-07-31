@@ -76,6 +76,7 @@ while current_try < max_tries:
     try: 
         #Get response
         response = requests.get(URL, params=params, auth=(api_key, secret_key))
+        logging.info(response.status_code)
 
         extract_path = 'data/data.zip'
         # JSON data files saved to a zip folder 'data.zip'
