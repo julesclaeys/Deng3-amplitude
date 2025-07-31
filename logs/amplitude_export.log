@@ -83,3 +83,30 @@
 2025-07-10 15:37:57,953 | RUN 20250710_153756 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmpfyyfl_1u\100011471\100011471_2025-07-09_8#0.json.gz -> data\100011471_2025-07-09_8#0.json
 2025-07-10 15:37:57,954 | RUN 20250710_153756 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmpfyyfl_1u\100011471\100011471_2025-07-09_9#0.json.gz -> data\100011471_2025-07-09_9#0.json
 2025-07-10 15:37:57,954 | RUN 20250710_153756 | INFO | Data extraction and processing complete.
+2025-07-31 13:46:11,459 | RUN 20250731_134611 | INFO | Starting run... | Run ID: 20250731_134611
+2025-07-31 13:46:12,898 | RUN 20250731_134611 | INFO | Data Retrieved Succesfully. | Run ID: 20250731_134611
+2025-07-31 13:46:12,916 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_0#0.json.gz -> data\100011471_2025-07-30_0#0.json
+2025-07-31 13:46:12,916 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_1#0.json.gz -> data\100011471_2025-07-30_1#0.json
+2025-07-31 13:46:12,918 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_10#0.json.gz -> data\100011471_2025-07-30_10#0.json
+2025-07-31 13:46:12,919 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_11#0.json.gz -> data\100011471_2025-07-30_11#0.json
+2025-07-31 13:46:12,921 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_12#0.json.gz -> data\100011471_2025-07-30_12#0.json
+2025-07-31 13:46:12,924 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_13#0.json.gz -> data\100011471_2025-07-30_13#0.json
+2025-07-31 13:46:12,925 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_14#0.json.gz -> data\100011471_2025-07-30_14#0.json
+2025-07-31 13:46:12,925 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_15#0.json.gz -> data\100011471_2025-07-30_15#0.json
+2025-07-31 13:46:12,925 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_16#0.json.gz -> data\100011471_2025-07-30_16#0.json
+2025-07-31 13:46:12,925 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_17#0.json.gz -> data\100011471_2025-07-30_17#0.json
+2025-07-31 13:46:12,930 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_18#0.json.gz -> data\100011471_2025-07-30_18#0.json
+2025-07-31 13:46:12,932 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_19#0.json.gz -> data\100011471_2025-07-30_19#0.json
+2025-07-31 13:46:12,933 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_2#0.json.gz -> data\100011471_2025-07-30_2#0.json
+2025-07-31 13:46:12,935 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_20#0.json.gz -> data\100011471_2025-07-30_20#0.json
+2025-07-31 13:46:12,936 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_21#0.json.gz -> data\100011471_2025-07-30_21#0.json
+2025-07-31 13:46:12,936 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_22#0.json.gz -> data\100011471_2025-07-30_22#0.json
+2025-07-31 13:46:12,937 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_23#0.json.gz -> data\100011471_2025-07-30_23#0.json
+2025-07-31 13:46:12,937 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_3#0.json.gz -> data\100011471_2025-07-30_3#0.json
+2025-07-31 13:46:12,938 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_4#0.json.gz -> data\100011471_2025-07-30_4#0.json
+2025-07-31 13:46:12,939 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_5#0.json.gz -> data\100011471_2025-07-30_5#0.json
+2025-07-31 13:46:12,941 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_6#0.json.gz -> data\100011471_2025-07-30_6#0.json
+2025-07-31 13:46:12,942 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_7#0.json.gz -> data\100011471_2025-07-30_7#0.json
+2025-07-31 13:46:12,943 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_8#0.json.gz -> data\100011471_2025-07-30_8#0.json
+2025-07-31 13:46:12,946 | RUN 20250731_134611 | INFO | Extracting gzip: C:\Users\JULESC~1\AppData\Local\Temp\tmptczfyumq\100011471\100011471_2025-07-30_9#0.json.gz -> data\100011471_2025-07-30_9#0.json
+2025-07-31 13:46:12,947 | RUN 20250731_134611 | INFO | Data extraction and processing complete.
