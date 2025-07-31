@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 bucket = os.getenv('AWS_BUCKET_NAME')
-access_key = os.getenv('AWS_ACCES_KEY')
+access_key = os.getenv('AWS_ACCESS_KEY')
 secret_key = os.getenv('AWS_SECRET_KEY')
 
 s3_client = boto3.client(
