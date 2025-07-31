@@ -1,7 +1,4 @@
 .venv
 .env
-data
 data.zip
 *.json
-
-git
