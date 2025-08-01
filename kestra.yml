@@ -1,0 +1,52 @@
+#This is the kestra script which first clones this repository before scheduling it based on a trigger. 
+
+#Name of the flow and namespace it is kept in
+id: amplitude
+namespace: amplitude_api
+
+#Input include our github data, a branch can be added but as we merged it all to main this is safe to ignore.
+  - id: github_url
+    type: STRING
+    defaults: https://github.com/julesclaeys/Deng3-amplitude
+
+#The triggers are commented out to prevents it repeatedly running
+# triggers:
+#     - id: daily-schedule
+#       type: io.kestra.plugin.core.trigger.Schedule
+#       cron: "*/2 * * * *"
+#       timezone: UTC
+
+#Starting our first task selecting a working directory
+tasks:
+  - id: wdir
+    type: io.kestra.plugin.core.flow.WorkingDirectory
+    #We nest our next task within this, cloning the github repo in our working directory
+    tasks:
+      - id: clone
+        type: io.kestra.plugin.git.Clone
+        url: https://github.com/julesclaeys/Deng3-amplitude
+        branch: main
+        #We have to steps to this task, the next one is our python ingestion, via our extract 
+      - id: python_ingestion
+        type: io.kestra.plugin.scripts.python.Commands
+        namespaceFiles:
+          enabled: true
+        taskRunner: 
+          type:
+            io.kestra.plugin.scripts.runner.docker.Docker
+        containerImage: python:slim
+        warningOnStdErr: false
+        #Loading our environment libraries
+        beforeCommands: 
+          - pip install -r requirements.txt
+        commands: 
+        # running both python scripts, we could add additional comments in between to assure the first commands ran correctly, be careful logs appear as errors for some reason
+          - python extract_dev.py
+          - python test_upload.py
+        env: 
+        #Loading our environment variables
+          AWS_ACCESS_KEY: "{{kv('AWS_ACCESS_KEY')}}"
+          AWS_SECRET_KEY: "{{kv('AWS_SECRET_KEY')}}"
+          AWS_BUCKET_NAME: "{{kv('AWS_BUCKET_NAME')}}"  
+          AMP_API_KEY: "{{kv('AMP_API_KEY')}}"
+          AMP_SECRET_KEY: "{{kv('AMP_SECRET_KEY')}}"
