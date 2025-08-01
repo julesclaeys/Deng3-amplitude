@@ -70,3 +70,20 @@ Within snowflake, we first built all of the tables using simple create Table as 
 Here we played with different methods to schedule or maintian freshness of the data, making sure the smaller tables were set up as views to not use any storages as the computing power required to run them was quite small. For larger tables we used procedures, these were shceduled by tasks either triggered by a schedule or via a stream. We also implemented dyanic tables and snowpipes as a way to see how they function, however we opted for the schedule triggered procedures as a way to save money. The procedures were tailored to use either inset or merge, to ensure the best possible practice. 
 
 ### dbt
+
+In dbt, we build multiple intermediate models, focusing on each of the normalised tables in the schema. This time no need to create procedure as dbt allows us to schedule jobs to run the whole lineage. We instead used our time to build thorough documentation and testing, using docblocks, new tests written in jinja, to ensure data quality remains of ther highest standard throughout our pipeline.
+
+# 7. Gold Layer!
+
+### Snowflake 
+
+We created a view combining all tables, making it ready for analysis. In a real use case we would focus on the business needs and provide them with only the required data, denormalised. 
+
+### dbt
+
+The same view was materialised in snowflake, using our dbt_project.yml file to ensure the most oprimised materialisation strategy, below is our DAG for this project, showing our lineage from staging to our gold layer our mart.
+
+<img width="960" height="999" alt="image" src="https://github.com/user-attachments/assets/46228ef4-bd46-4650-a192-5a3322386f63" />
+
+# 8. Orkestrating a symphony!
+
