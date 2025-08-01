@@ -8,7 +8,7 @@ Finally, overall orchestration was started in Kestra, cloning this directory wit
 
 
 Here's a visual representation of the pipeline: 
-![alt text](excalidraw.png)
+![alt text](images/excalidraw.png)
 
 Ampltidue Api Documentation: https://amplitude.com/docs/apis/analytics/export
 
