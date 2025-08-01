@@ -87,3 +87,5 @@ The same view was materialised in snowflake, using our dbt_project.yml file to e
 
 # 8. Orkestrating a symphony!
 
+Finally using Kestra, we wrote a yml script which allows Kestra to clone this repository, use it as a working directory, to run both of the scripts to extract and load the data into our s3 bucket. Ideally, we would update the script to make it run the snowflake pipeline following the first run. 
+
