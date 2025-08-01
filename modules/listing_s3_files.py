@@ -1,4 +1,5 @@
 #Listing Files in S3 Bucket Folder using Boto3
+#This is an example of module which could be built for better extraction in a longer project
 import boto3
 
 def list_s3_files(bucket_name, aws_access_key_id, aws_secret_access_key, s3_folder=""):

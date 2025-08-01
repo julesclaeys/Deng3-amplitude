@@ -53,3 +53,5 @@ def extract_amplitude_data(start_date, end_date, api_key, secret_key, output_fil
     except Exception as e:
         print(f'An Error has occured!: {str(e)}')
         return False
+
+#This code has to be followed by the unzip.json and then a load module not created yet. 

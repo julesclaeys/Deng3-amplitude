@@ -1,4 +1,5 @@
 # Load libraries
+#This is the quick and dirty version, should be modularised
 import os
 import boto3
 from dotenv import load_dotenv

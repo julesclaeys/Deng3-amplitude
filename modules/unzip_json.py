@@ -65,3 +65,5 @@ def extract_json_files(zip_file_path, output_dir="data"):
 # Example usage:
 if __name__ == "__main__":
     extract_json_files("data.zip")
+
+#After unzip this could be followed by either check modules or a load
