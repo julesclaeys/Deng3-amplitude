@@ -47,13 +47,26 @@ We then got to stage the data inferring the schema read from the json files we l
 
 # 5 Obtaining a Bronze Layer! 
 
-From here we enter the tranformation part of our pipeline, it's a bit heavier and we repeated it in snowflake and dbt. Here is the schema we opted for: 
+From here we enter the tranformation part of our pipeline, it's a bit heavier and we repeated it in snowflake and dbt. 
 
+### Snowflake 
 
+The bronze layer was composed of the flattened data, separated between events and events lists. 
 
-## Snowflake 
+### dbt 
 
+In dbt, we used our snowflake connection to obtain the rawe data tables, renaming the fields, keeping only the ones we were aiming to use. We also split the data into two stages, amplitude events and amplitude events lists. 
 
+# 6 Creating the silver Layer
 
+Here is the schema we opted for: 
 
+<img width="1471" height="783" alt="image" src="https://github.com/user-attachments/assets/c015523b-f213-4483-83d9-10360b7bbb2b" />
 
+### Snowflake
+
+Within snowflake, we first built all of the tables using simple create Table as syntax. 
+
+Here we played with different methods to schedule or maintian freshness of the data, making sure the smaller tables were set up as views to not use any storages as the computing power required to run them was quite small. For larger tables we used procedures, these were shceduled by tasks either triggered by a schedule or via a stream. We also implemented dyanic tables and snowpipes as a way to see how they function, however we opted for the schedule triggered procedures as a way to save money. The procedures were tailored to use either inset or merge, to ensure the best possible practice. 
+
+### dbt
