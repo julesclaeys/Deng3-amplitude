@@ -11,3 +11,5 @@ load_dotenv()
 aws_access_key=os.getenv('AWS_ACCESS_KEY')
 aws_secret_key=os.getenv('AWS_SECRET_KEY')
 aws_bucket_name=os.getenv('AWS_BUCKET')
+
+#Code not written yet.

@@ -1,3 +1,4 @@
+#Future version of the code with modules
 from modules.extract_amplitude_files import extract_amplitude_data
 from modules.unzip_json import extract_json_files
 

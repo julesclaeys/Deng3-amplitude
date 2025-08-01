@@ -1,3 +1,5 @@
+//SQL merge implemented in snowflake
+
 CREATE OR REPLACE PROCEDURE REFRESH_S_AMPLITUDE_EVENTS()
 returns varchar
 language sql

@@ -1,5 +1,6 @@
 #Data Extraction using Amplitude's Export API
 #https://amplitude.com/docs/apis/analytics/export
+# Quick and dirty exctract to be deprecated 
 
 #Load Libraries
 import os

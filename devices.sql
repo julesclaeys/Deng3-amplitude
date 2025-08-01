@@ -1,4 +1,5 @@
 //Device Family Lookup
+//SQL code example of how it is implemented in snowflake
 SELECT DISTINCT HASH("device_family") as device_family_id, 
 "device_family" as device_family
 FROM AMPLITUDE_EVENTS;
